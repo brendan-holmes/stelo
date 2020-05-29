@@ -1,0 +1,51 @@
+.Sidebar {
+    box-sizing: border-box;
+    border: 5px solid pink;
+    height: 100vh;
+    top: 0;
+    position: sticky;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+   }
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Size small */
+@media screen and (min-width: 250px) {
+    .Sidebar {
+        width: 100px;
+        padding: 50px 10px 10px 10px;
+    }
+
+    .SidebarContent {
+        padding-left: 20px;
+    }
+}
+
+/* Size medium */
+@media screen and (min-width: 500px) {
+    .Sidebar {
+        width: 200px;
+        padding: 50px 10px 10px 10px;
+    }
+}
+
+/* Size large */
+@media screen and (min-width: 750px) {
+    .Sidebar {
+        width: 200px;
+        padding: 50px 10px 10px 10px;
+    }
+}

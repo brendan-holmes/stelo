@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "lemon-milk";
+    src: url("./fonts/LEMONMILK-BoldItalic.otf") format("opentype");
+}
+
+.App {
+    display: flex;
+    font-family: "lemon-milk";
+}
