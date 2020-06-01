@@ -52,7 +52,7 @@ h1 {
     .ContentContainer {
         display: block;
         width: calc(100vw - 200px - 80px);
-        padding: 25px 100px 50px 100px;
+        padding: 25px 40px 50px 40px;
         /* top left bottom right */
     }
 
