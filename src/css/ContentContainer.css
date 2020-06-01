@@ -1,0 +1,66 @@
+.ContentContainer {
+    /* box-sizing: border-box; */
+    /* border: 5px solid green; */
+    text-align: left;
+    background-color: white;
+    /* width: 500px; */
+}
+
+h1 {
+    color: black;
+}
+
+.BackArrow {
+    height: 32px;
+    width: 32px;
+    opacity: 50%;
+    padding: 10px;
+}
+
+/* Size small */
+@media screen and (min-width: 0px) {
+    .ContentContainer {
+        display: none;
+        /* width: calc(100vw - 100px); */
+        padding: 2vw;
+    }
+
+    .BackArrow {
+        display: block;
+    }
+}
+
+/* Size medium */
+@media screen and (min-width: 450px) {
+    .ContentContainer {
+        display: block;
+        width: calc(100vw - 200px - 80px);
+        padding: 25px 40px 50px 40px;
+    }
+
+    .BackArrow {
+        display: none;
+    }
+
+    .PageTitle {
+        display: none;
+    }
+}
+
+/* Size large */
+@media screen and (min-width: 800px) {
+    .ContentContainer {
+        display: block;
+        width: calc(100vw - 200px - 80px);
+        padding: 25px 100px 50px 100px;
+        /* top left bottom right */
+    }
+
+    .BackArrow {
+        display: none;
+    }
+
+    .PageTitle {
+        display: none;
+    }
+}

@@ -1,29 +1,29 @@
 import React from 'react';
 import '../css/Sidebar.css';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
   } from "react-router-dom";
 
-function Sidebar(){
+function Sidebar(props){
+
+    const onLinkClick = () => {
+        // console.log(typeof(props.updateContentView))
+        console.log("Link clicked")
+        props.updateContentView(true);
+    }
     return (
         <div className="Sidebar">
             <div className="SidebarContent">
-                <h1>Stelo</h1>
+                <Link to="/" className="link"><h1 className="Brand">Stelo</h1></Link>
                 <ul>
                     <li>
-                        <Link to="/" className="link">Home</Link>
+                        <Link to="/projects" className="link" onClick={onLinkClick}>Projects</Link>
                     </li>
                     <li>
-                        <Link to="/projects" className="link">Projects</Link>
+                        <Link to="/about" className="link" onClick={onLinkClick}>About</Link>
                     </li>
                     <li>
-                        <Link to="/about" className="link">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" className="link">Contact</Link>
+                        <Link to="/contact" className="link" onClick={onLinkClick}>Contact</Link>
                     </li>
                 </ul>
             </div>

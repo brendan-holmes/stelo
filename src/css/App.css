@@ -6,4 +6,7 @@
 .App {
     display: flex;
     font-family: "lemon-milk";
+    flex-wrap: wrap;
+    justify-content: stretch;
+    flex-grow: 1;
 }

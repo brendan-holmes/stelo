@@ -1,11 +1,22 @@
 .Sidebar {
-    box-sizing: border-box;
-    border: 5px solid pink;
+    /* box-sizing: border-box; */
+    /* border: 5px solid pink; */
     height: 100vh;
     top: 0;
     position: sticky;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color:white;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+.SidebarContent {
+    padding-left: 20px;
+}
+
+.Brand {
+    color: pink;
 }
 
 li {
@@ -14,7 +25,7 @@ li {
 
 ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
    }
 
 .link {
@@ -22,30 +33,34 @@ ul {
     color: black;
 }
 
-/* Size small */
-@media screen and (min-width: 250px) {
-    .Sidebar {
-        width: 100px;
-        padding: 50px 10px 10px 10px;
-    }
+.link:hover {
+    color: pink;
+}
 
-    .SidebarContent {
-        padding-left: 20px;
+/* Size small */
+@media screen and (min-width: 0px) {
+    .Sidebar {
+        width: 100vw;
+        font-size: xxx-large;
+        
+        /* padding: 5vw auto auto 5vw; */
     }
 }
 
 /* Size medium */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 450px) {
     .Sidebar {
         width: 200px;
-        padding: 50px 10px 10px 10px;
+        font-size: large;
+        /* padding: 5vw auto auto 5vw; */
     }
 }
 
 /* Size large */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
     .Sidebar {
         width: 200px;
-        padding: 50px 10px 10px 10px;
+        font-size: large;
+        /* padding: 50px 10px 10px 10px; */
     }
 }
