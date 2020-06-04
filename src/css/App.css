@@ -10,3 +10,148 @@
     justify-content: stretch;
     flex-grow: 1;
 }
+
+.Sidebar {
+    /* box-sizing: border-box; */
+    /* border: 5px solid pink; */
+    height: 100vh;
+    top: 0;
+    position: sticky;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color:white;
+    flex-wrap: wrap;
+    padding-top: 0;
+}
+
+.SidebarContent {
+    padding-left: 20px;
+}
+
+.Brand {
+    color: pink;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+   }
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: pink;
+}
+
+.ContentContainer {
+    /* box-sizing: border-box; */
+    /* border: 5px solid green; */
+    text-align: left;
+    background-color: white;
+}
+
+.PageTitle {
+    color: black;
+}
+
+.BackButton {
+    height: 32px;
+    width: 32px;
+    opacity: 50%;
+    float: right;
+    padding-right: 0;
+    margin-top: 2vw;
+    margin-right: 0px;
+}
+
+/* Size small */
+@media screen and (min-width: 0px) {
+    .Sidebar {
+        width: 100vw;
+        font-size: xx-large;
+        /* padding: 5vw auto auto 5vw; */
+    }
+
+    /* Also defined inline in ContentContainer.js */
+    .ContentContainer {
+        display: none;
+        /* width: calc(100vw - 100px); */
+        padding-left: 2vw;
+        padding-right: 2vw;
+        min-height: 100vh;
+    }
+
+    .BackButton {
+        display: block;
+    }
+
+    img {
+        width: 96vw;
+        /* padding: 0 0 2vw 0; */
+    }
+}
+
+/* Size medium */
+@media screen and (min-width: 450px) {
+    .Sidebar {
+        width: 200px;
+        font-size: large;
+        /* padding: 5vw auto auto 5vw; */
+    }
+
+    .ContentContainer {
+        display: block;
+        width: calc(100vw - 200px - 80px - 10px);
+        padding: 25px 40px 50px 40px;
+    }
+
+    .BackButton {
+        display: none;
+    }
+
+    .PageTitle {
+        display: none;
+    }
+
+    img {
+        width: 150px;
+        padding: 0 20px 20px 0;
+    }
+}
+
+/* Size large */
+@media screen and (min-width: 800px) {
+    .Sidebar {
+        width: 200px;
+        font-size: large;
+        /* padding: 50px 10px 10px 10px; */
+    }
+
+    .ContentContainer {
+        display: block;
+        /* 100% of width - body - left padding - right padding */
+        width: calc(100vw - 200px - 80px);
+        padding: 25px 40px 50px 40px;
+        /* top left bottom right */
+    }
+
+    .BackButton {
+        display: none;
+    }
+
+    .PageTitle {
+        display: none;
+    }
+
+    img {
+        width: 350px;
+        padding: 0 20px 20px 0;
+    }
+}

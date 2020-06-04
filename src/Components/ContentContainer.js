@@ -1,34 +1,27 @@
 import React from 'react';
 import '../css/ContentContainer.css'
 import ImageGallery from './ImageGallery';
-import backArrow from '../resources/back-arrow.png';
+import BackButtonIcon from '../resources/close-x.png';
 
 const styles = {
     contentView: {
         display: 'block',
         position: 'absolute',
-        minHeight: '100vh',
-        width: '100vw'
     }
 }
 
 function ContentContainer(props){
 
-    const BackArrow = () => {
-        // console.log(props.isContentView)
-        // console.log('window innerWidth < 450')
-        // console.log(window.innerWidth < 450)
-        // console.log('test')
-
+    const BackButton = () => {
         if(props.isContentView && window.innerWidth < 450)
         {
-            return <input type="image" src={backArrow} alt="back arrow" className="BackArrow" onClick={() => props.updateContentView(false)} />;
+            return <input type="image" src={BackButtonIcon} alt="back arrow" className="BackButton" onClick={() => props.updateContentView(false)} />;
         }
     }
 
     return (
         <div className="ContentContainer" style={props.isContentView && window.innerWidth < 450 ? styles.contentView : {}}>
-            {BackArrow()}
+            {BackButton()}
             <h1 className="PageTitle">{props.keyword}</h1>
             <Text text={props.text}/>
             <ImageGallery imageUrls={props.imageUrls}/>

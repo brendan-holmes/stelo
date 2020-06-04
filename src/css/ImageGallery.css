@@ -3,4 +3,5 @@
     flex-wrap: wrap;
     flex-flow: column;
     width: 400px;
+    justify-content: space-around;
 }
