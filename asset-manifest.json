@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/stelo/static/css/main.c3139867.chunk.css",
+    "main.js": "/stelo/static/js/main.4205f002.chunk.js",
+    "main.js.map": "/stelo/static/js/main.4205f002.chunk.js.map",
+    "runtime-main.js": "/stelo/static/js/runtime-main.4912353b.js",
+    "runtime-main.js.map": "/stelo/static/js/runtime-main.4912353b.js.map",
+    "static/js/2.33cec753.chunk.js": "/stelo/static/js/2.33cec753.chunk.js",
+    "static/js/2.33cec753.chunk.js.map": "/stelo/static/js/2.33cec753.chunk.js.map",
+    "index.html": "/stelo/index.html",
+    "precache-manifest.00ed85828fce4198f8a7631fd7efd040.js": "/stelo/precache-manifest.00ed85828fce4198f8a7631fd7efd040.js",
+    "service-worker.js": "/stelo/service-worker.js",
+    "static/css/main.c3139867.chunk.css.map": "/stelo/static/css/main.c3139867.chunk.css.map",
+    "static/js/2.33cec753.chunk.js.LICENSE.txt": "/stelo/static/js/2.33cec753.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/stelo/static/media/LEMONMILK-BoldItalic.6f93d587.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4912353b.js",
+    "static/js/2.33cec753.chunk.js",
+    "static/css/main.c3139867.chunk.css",
+    "static/js/main.4205f002.chunk.js"
+  ]
+}
