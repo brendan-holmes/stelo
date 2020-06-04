@@ -1,8 +1,6 @@
 import React from 'react';
 import '../css/Sidebar.css';
-import {
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Sidebar(props){
 
@@ -14,16 +12,16 @@ function Sidebar(props){
     return (
         <div className="Sidebar">
             <div className="SidebarContent">
-                <Link to="/" className="link"><h1 className="Brand">Stelo</h1></Link>
+                <Link to="/stelo" className="link"><h1 className="Brand">Stelo</h1></Link>
                 <ul>
                     <li>
-                        <Link to="/projects" className="link" onClick={onLinkClick}>Projects</Link>
+                        <Link to="/stelo/projects" className="link" onClick={onLinkClick}>Projects</Link>
                     </li>
                     <li>
-                        <Link to="/about" className="link" onClick={onLinkClick}>About</Link>
+                        <Link to="/stelo/about" className="link" onClick={onLinkClick}>About</Link>
                     </li>
                     <li>
-                        <Link to="/contact" className="link" onClick={onLinkClick}>Contact</Link>
+                        <Link to="/stelo/contact" className="link" onClick={onLinkClick}>Contact</Link>
                     </li>
                 </ul>
             </div>

@@ -21,15 +21,7 @@ function App() {
       <Router>
         <Sidebar updateContentView={setContentView}/>
         <Switch>
-          <Route exact={true} path="/">
-            <ContentContainer 
-              keyword={""} 
-              imageUrls={images.home}
-              text={copy.home}
-              isContentView={isContentView}
-              updateContentView={setContentView}/>
-          </Route>
-          <Route path="/projects">
+          <Route path="/stelo/projects">
             <ContentContainer 
               keyword={"Projects"} 
               imageUrls={images.projects}
@@ -37,7 +29,7 @@ function App() {
               isContentView={isContentView}
               updateContentView={setContentView}/>
           </Route>
-          <Route path="/about">
+          <Route path="/stelo/about">
             <ContentContainer 
               keyword={"About"} 
               imageUrls={images.about}
@@ -45,11 +37,27 @@ function App() {
               isContentView={isContentView}
               updateContentView={setContentView}/>
           </Route>
-          <Route path="/contact">
+          <Route path="/stelo/contact">
             <ContentContainer 
               keyword={"Contact"} 
               imageUrls={images.contact}
               text={copy.contact}
+              isContentView={isContentView}
+              updateContentView={setContentView}/>
+          </Route>
+          <Route path="/stelo">
+            <ContentContainer 
+              keyword={""} 
+              imageUrls={images.home}
+              text={copy.home}
+              isContentView={isContentView}
+              updateContentView={setContentView}/>
+          </Route>
+          <Route path="/">
+            <ContentContainer 
+              keyword={""} 
+              imageUrls={images.home}
+              text={copy.home}
               isContentView={isContentView}
               updateContentView={setContentView}/>
           </Route>

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Image.css';
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 
 function Image(props){
     return (

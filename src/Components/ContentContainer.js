@@ -12,6 +12,8 @@ const styles = {
 
 function ContentContainer(props){
 
+    console.log(window.innerWidth)
+
     const BackButton = () => {
         if(props.isContentView && window.innerWidth < 450)
         {
